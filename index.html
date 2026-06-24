@@ -1,6 +1,13 @@
 <style>
-  .clients .swiper-wrapper {
+  .clients .swiper-slide {
+    display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  .clients .swiper-slide img {
+    max-width: 120px;
+    height: auto;
   }
 </style>
 
@@ -116,38 +123,38 @@
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
             {
-  "loop": false,
-  "speed": 600,
-  "autoplay": false,
-  "slidesPerView": "auto",
-  "pagination": {
-    "el": ".swiper-pagination",
-    "type": "bullets",
-    "clickable": true
-  },
-  "breakpoints": {
-    "320": {
-      "slidesPerView": 2,
-      "spaceBetween": 40
-    },
-    "480": {
-      "slidesPerView": 3,
-      "spaceBetween": 60
-    },
-    "640": {
-      "slidesPerView": 4,
-      "spaceBetween": 80
-    },
-    "992": {
-      "slidesPerView": 5,
-      "spaceBetween": 120
-    },
-    "1200": {
-      "slidesPerView": 6,
-      "spaceBetween": 120
-    }
-  }
-}
+              "loop": false,
+              "speed": 600,
+              "autoplay": {
+                "delay": 2500,
+                "disableOnInteraction": false
+              },
+              "slidesPerView": 2,
+              "spaceBetween": 40,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "576": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "768": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 100
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
           </script>
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
@@ -303,7 +310,7 @@
               alt="Tetra Pro skills illustration">
           </div>
 
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
+          <!-- <div class="col-lg-6 pt-4 pt-lg-0 content">
 
             <h3>Our Skills & Capabilities</h3>
 
@@ -383,7 +390,7 @@
 
             </div>
 
-          </div>
+          </div> -->
         </div>
 
       </div>
